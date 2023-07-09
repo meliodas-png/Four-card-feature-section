@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 40rem;
+    text-align: center;
+    margin-block: 2.8rem;
+    margin-inline: auto;
+}
+
+.header p {
+    width: 28rem;
+    margin-inline: auto;
+}
+
+.header span {
+    font-size: 1.9rem;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.block {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    width: 20rem;
+    height: 13rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.25rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.supervisor,
+.calculator {
+    margin-block: auto;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+img {
+    position: relative;
+    top: 2.5rem;
+    left: 13rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.line {
+    height: 5px;
+    position: relative;
+    bottom: 1.2rem;
+    right: 1.25rem;
+    border-radius: 5px 5px 0 0;
+    width: 20rem;
+}
+
+.team-builder .line {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.supervisor .line {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.karma .line {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.calculator .line {
+    background-color: hsl(212, 86%, 64%);
+}
+
+p,
+h1,
+h2,
+span {
+    opacity: 0.7;
+}
+
+@media (max-width: 450px) {
+    .information {
+        display: block;
+        position: relative;
+    }
+
+    .block, .header {
+        margin-inline: auto;
+        position: relative;
+        left: 8rem;
+    }
+
+    .header p {
+        width: 70vw;
+    }
+
+    .supervisor {
+        margin-bottom: 1.5rem;
+    }
+}
